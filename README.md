@@ -1,7 +1,10 @@
 BDD for Gomed Control Center
 ============================
-##Technology Stack:
-*Cucumber
-*Selenium
-*Junit
+
+Technology Stack:
+-----------------
+
+ 1. Cucumber
+ 2. Selenium
+ 3. Junit
 
