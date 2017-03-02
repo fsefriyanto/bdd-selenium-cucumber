@@ -1,5 +1,5 @@
-#BDD for Gomed Control Center
-
+BDD for Gomed Control Center
+============================
 ##Technology Stack:
 *Cucumber
 *Selenium
