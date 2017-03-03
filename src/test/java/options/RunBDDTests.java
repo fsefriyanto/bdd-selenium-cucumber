@@ -7,5 +7,5 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/features/web", glue = "stepdefs.web", plugin = { "pretty", "html:target/cucumber", })
-public class RunWebTests {
+public class RunBDDTests {
 }

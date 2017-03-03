@@ -1,9 +1,8 @@
 package web.pages;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import utils.DriverFactory;
@@ -16,14 +15,15 @@ public class LoginPage extends DriverFactory {
 	 */
 	By loginSection = By.className("login");
 	By loginButton = By.id("btnLogin");
-    By usernameInput = By.name("username");
-    By passwordInput = By.name("password");
-   
+	By usernameInput = By.name("username");
+	By passwordInput = By.name("password");
+	By listOrderPage = By.xpath("//li[@class='uk-active']/span");
 
 	/**
 	 * All functions related to behavior will follow now
 	 */
-	public void ishomepageDisplayed() {
+	public void ishomepageDisplayed(String url) {
+		driver.get(url);
 		waitVar.until(ExpectedConditions.presenceOfElementLocated(loginSection));
 		driver.findElement(loginSection).isDisplayed();
 	}
@@ -33,13 +33,18 @@ public class LoginPage extends DriverFactory {
 		waitVar.until(ExpectedConditions.presenceOfElementLocated(loginButton));
 	}
 
+	public void inputUsernameAndPassword(String username, String password) {
+		driver.findElement(usernameInput).sendKeys(username);
+		driver.findElement(passwordInput).sendKeys(password);
+	}
+
 	public void clickLoginButton() {
 		driver.findElement(loginButton).click();
 	}
 
 	public void verifyErrorMessage(String msg) {
-		WebElement elem1 = driver.findElement(usernameInput);
 		assertEquals("Please fill out this field.", driver.findElement(usernameInput).getAttribute("validationMessage"));
-		
-	} 
+
+	}
+
 }
