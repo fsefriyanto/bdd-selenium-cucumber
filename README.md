@@ -8,3 +8,4 @@ Technology Stack:
  2. Selenium
  3. Junit
 
+install geckodriver before running
