@@ -31,6 +31,7 @@ public class LoginPage extends DriverFactory {
 	public void isloginsectionDisplayed() {
 		waitVar.until(ExpectedConditions.presenceOfElementLocated(loginSection));
 		waitVar.until(ExpectedConditions.presenceOfElementLocated(loginButton));
+		driver.findElement(loginSection).isDisplayed();
 	}
 
 	public void inputUsernameAndPassword(String username, String password) {
