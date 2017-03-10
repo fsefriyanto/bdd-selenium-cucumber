@@ -17,7 +17,7 @@ public class LoginPage extends DriverFactory {
 	By loginButton = By.id("btnLogin");
 	By usernameInput = By.name("username");
 	By passwordInput = By.name("password");
-	By listOrderPage = By.xpath("//li[@class='uk-active']/span");
+//	By listOrderPage = By.xpath("//li[@class='uk-active']/span");
 
 	/**
 	 * All functions related to behavior will follow now

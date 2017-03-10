@@ -23,7 +23,7 @@ public class DriverFactory {
 		profile.setPreference("browser.tabs.remote.autostart.2", false);
 		driver = new FirefoxDriver(profile);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		waitVar = new WebDriverWait(driver, 15);
+		waitVar = new WebDriverWait(driver, 45);
 	}
 	
 	/**
