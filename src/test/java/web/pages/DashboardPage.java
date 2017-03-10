@@ -15,7 +15,8 @@ public class DashboardPage extends DriverFactory {
 	By productCategoryMenu = By.xpath("//ul[@id='listView']/li[3]/a");
 	By productMenu = By.xpath("//ul[@id='listView']/li[4]/a");
 //	contains(text()='Some text')
-	By productCategoryPage = By.xpath("//li[@class='uk-active']/span");
+//	By productCategoryPage = By.xpath("//li[@class='uk-active']/span");
+	By productCategoryPage = By.xpath("//li[@class='uk-active']/span[contains(text(),'List Category')]");
 	By productPage = By.xpath("//li[@class='uk-active']/span");
 
 	public void isListOrderPageDisplayed() {
@@ -56,5 +57,7 @@ public class DashboardPage extends DriverFactory {
 	
 	public void clickSlidingButton(){
 		driver.findElement(slidingButton).click();
+		waitVar.until(ExpectedConditions.presenceOfElementLocated(leftMenuNav));
+		driver.findElement(leftMenuNav).isDisplayed();
 	}
 }

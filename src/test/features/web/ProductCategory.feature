@@ -20,4 +20,4 @@ Scenario: Search Product Category By Code
 	When search product category by code "FLU123"
 	Then user will get following product category:
 	|Code                 |
-	|FLU123            |     
+	|FLU123               |     
