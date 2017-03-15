@@ -17,5 +17,17 @@ public class DashboardSD {
 	public void left_menu_is_display() throws Throwable {
 	    dp.isLeftMenuDisplayed();
 	}
+	
+	@When("^clicks order menu$")
+	public void clicks_order_menu() throws Throwable {
+	    dp.clickOrderMenu();
+	}
+	
+	@When("^clicks customer menu$")
+	public void clicks_customer_menu() throws Throwable {
+	   dp.clickCustomerMenu();
+	}
+
+	
 
 }

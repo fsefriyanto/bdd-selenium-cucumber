@@ -10,6 +10,4 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty"},
 		glue = {"stepdefs.api"},
 		features = {"src/test/features/api"})
-public class RunApiTest {
-	
-}
+public class RunApiTest {}

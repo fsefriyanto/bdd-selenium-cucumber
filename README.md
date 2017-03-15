@@ -8,4 +8,8 @@ Technology Stack:
  2. Selenium
  3. Junit
 
-install geckodriver before running
+install geckodriver before running, because we user firefox webdriver
+
+Running
+-------
+using maven : mvn test

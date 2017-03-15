@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import web.pages.DashboardPage;
 import web.pages.LoginPage;
 
-public class GomedCcLoginSD {
+public class LoginSD {
 	LoginPage lp = new LoginPage();
 	DashboardPage lop = new DashboardPage();
 
